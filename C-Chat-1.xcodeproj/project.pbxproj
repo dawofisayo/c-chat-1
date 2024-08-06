@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4B2EB27C2C57624400689631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2EB27B2C57624400689631 /* Assets.xcassets */; };
 		4B2EB2822C57624400689631 /* C-Chat-1 MessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4B2EB2812C57624400689631 /* C-Chat-1 MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4B2EB2872C57624400689631 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2EB2862C57624400689631 /* Messages.framework */; };
 		4B2EB28A2C57624400689631 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2EB2892C57624400689631 /* MessagesViewController.swift */; };
 		4B2EB28D2C57624400689631 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B2EB28C2C57624400689631 /* Base */; };
 		4B2EB28F2C57624500689631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2EB28E2C57624500689631 /* Assets.xcassets */; };
+		4B2EB29A2C625DE900689631 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2EB2862C57624400689631 /* Messages.framework */; };
+		4B2EB29B2C625DE900689631 /* Messages.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2EB2862C57624400689631 /* Messages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B2EB29C2C625DE900689631 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B2EB29B2C625DE900689631 /* Messages.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B2EB2872C57624400689631 /* Messages.framework in Frameworks */,
+				4B2EB29A2C625DE900689631 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +147,7 @@
 				4B2EB27D2C57624400689631 /* Sources */,
 				4B2EB27E2C57624400689631 /* Frameworks */,
 				4B2EB27F2C57624400689631 /* Resources */,
+				4B2EB29C2C625DE900689631 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,6 +376,7 @@
 				INFOPLIST_FILE = "C-Chat-1 MessagesExtension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "C-Chat-1";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +403,7 @@
 				INFOPLIST_FILE = "C-Chat-1 MessagesExtension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "C-Chat-1";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
